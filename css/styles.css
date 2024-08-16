@@ -1,0 +1,68 @@
+.espacio {
+    background-color: rgba(201, 65, 255, 0.568);
+    height: 100vh;
+}
+
+.chocolate {
+    background-color: chocolate;
+    height:800px;
+    width: 80px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 3;
+    animation-name:bola1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fresa {
+    background-color: rgb(232, 59, 255);
+    height:800px;
+    width: 80px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+    animation-name:bola2;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.vainilla {
+    background-color: rgb(255, 255, 255);
+    height:800px;
+    width: 80px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+    animation-name:bola3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.cono {
+    height: auto;
+    width: 20%;
+    position: relative;
+    z-index: 0;
+
+}
+
+@keyframes bola3 {
+    0%{ left: 0; top: 0px;}
+    70%{ left: 90px; top: 0px;}
+    100%{ left: 90px; top: 170px ;}
+}
+
+@keyframes bola2 {
+    0%{ left: 0; top: 0px;}
+    70%{ left: 90px; top: 0px;}
+    100%{ left: 90px; top: 200px ;}
+}
+
+@keyframes bola1 {
+    0%{ left: 0; top: 0px;}
+    70%{ left: 90px; top: 0px;}
+    100%{ left: 90px; top: 230px ;}
+}
